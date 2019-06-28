@@ -66,7 +66,7 @@
     <div class="col-12"><h5 class="mt-3 mb-0 formHeading">Services menu</h5></div>
     <div class="form-group mt-4">
         <div class="row">
-            @foreach(services() as $service)
+            @foreach($services as $service)
             <div class="col-md-3">
                 <div class="block">
                     <div class="top text-center">

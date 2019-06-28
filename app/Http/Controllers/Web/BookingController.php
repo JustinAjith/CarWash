@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Web;
 use App\Booking;
 use App\Http\Requests\BookingRequest;
 use App\Repositories\Web\BookingRepository;
+use App\Service;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -17,7 +18,8 @@ class BookingController extends Controller
     }
 
     public function index() {
-        return view('web.booking.index');
+        $services = Service::all();
+        return view('web.booking.index', compact('services'));
     }
 
     public function store(BookingRequest $request)

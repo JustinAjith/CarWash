@@ -25,7 +25,6 @@
                         <li>
                             <div class="input-append newsletter-box text-center">
                                 <input type="text" class="full text-center" placeholder="Email ">
-                                <button class="btn  bg-gray" type="button"> Lorem ipsum <i class="fa fa-long-arrow-right"> </i> </button>
                             </div>
                         </li>
                     </ul>
